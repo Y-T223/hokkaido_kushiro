@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>北海道立釧路芸術館｜港のレンガ倉庫に息づく、芸術の拠点</title>
+<meta name="description" content="1998年開館。釧路港のレンガ倉庫街を思わせる建物で、映像芸術・芸術と自然・地域と芸術をテーマに作品を紹介する北海道立釧路芸術館。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--brick:#6e2b23;--brick-d:#4a1c17;--ink:#1c2631;--gold:#b5915a;--paper:#ebe6da;--paper-d:#ddd6c5;--text:#2a2420;color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Serif JP",serif;background:var(--paper);color:var(--text);line-height:2;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:"Shippori Mincho",serif;font-weight:600;line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+h2{font-size:clamp(1.5rem,3.6vw,2rem);text-align:center;color:var(--brick);margin-bottom:12px;letter-spacing:.12em}
+.rule{width:72px;height:3px;margin:0 auto 44px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.lead{max-width:640px;margin:0 auto 40px;text-align:center}
+
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#f5efe2;background:var(--ink) center/cover no-repeat;background-image:linear-gradient(180deg,rgba(28,38,49,.25) 0%,rgba(28,22,20,.88) 100%),url(images/1.jpg);padding:0}
+.hero .wrap{padding-bottom:72px;padding-top:120px}
+.hero p.kicker{letter-spacing:.3em;font-size:.9rem;color:var(--gold)}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);font-weight:800;letter-spacing:.14em;margin:8px 0 18px}
+.hero p.sub{max-width:34em;font-size:1.05rem}
+.hero .meta{margin-top:28px;border-top:1px solid rgba(181,145,90,.7);padding-top:14px;font-size:.92rem;display:flex;flex-wrap:wrap;gap:6px 28px}
+
+.story{background:var(--paper)}
+.story .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.frame{padding:10px;background:#f7f3ea;border:1px solid var(--gold);box-shadow:8px 8px 0 var(--brick)}
+.frame img{aspect-ratio:4/5;object-fit:cover;width:100%;filter:sepia(.12) contrast(1.02)}
+.year{font-family:"Shippori Mincho",serif;font-size:3.4rem;color:var(--brick);line-height:1;letter-spacing:.04em}
+.story p+p{margin-top:1em}
+
+.themes{background:var(--ink);color:#ece5d6}
+.themes h2{color:var(--gold)}
+.themes .list{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid rgba(181,145,90,.55)}
+.themes .item{padding:36px 26px;border-right:1px solid rgba(181,145,90,.55)}
+.themes .item:last-child{border-right:0}
+.themes h3{font-size:1.25rem;color:#f5efe2;margin-bottom:8px}
+.themes p{font-size:.95rem;line-height:1.9}
+
+.feature .cols{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.feature .wide img{aspect-ratio:3/2;object-fit:cover;width:100%;border:1px solid var(--gold);padding:8px;background:#f7f3ea;filter:sepia(.1)}
+.feature h3{font-size:1.4rem;color:var(--brick);margin-bottom:12px}
+.feature ul{list-style:none;padding:0;margin-top:20px}
+.feature li{padding:8px 0 8px 1.4em;border-bottom:1px dotted var(--gold);position:relative}
+.feature li::before{content:"";position:absolute;left:0;top:1.35em;width:7px;height:7px;background:var(--brick)}
+
+.voices{background:var(--paper-d)}
+.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.voice{background:#f7f3ea;border:1px solid var(--gold);padding:30px 28px;position:relative}
+.stars{color:var(--brick);letter-spacing:.2em;font-size:1.1rem;margin-bottom:8px}
+.voice p{font-size:.96rem}
+
+.info dl{display:grid;grid-template-columns:9em 1fr;max-width:720px;margin:0 auto;border-top:2px solid var(--brick)}
+.info dt,.info dd{padding:16px 8px;border-bottom:1px solid var(--paper-d)}
+.info dt{font-family:"Shippori Mincho",serif;font-weight:600;color:var(--brick)}
+.info dd a{text-decoration:underline;text-underline-offset:4px;word-break:break-all}
+.sns{display:flex;gap:14px;align-items:center}
+.sns a{width:44px;height:44px;border:1px solid var(--brick);border-radius:50%;display:grid;place-items:center;color:var(--brick);transition:background .2s,color .2s}
+.sns a:hover{background:var(--brick);color:#f5efe2}
+.sns svg{width:20px;height:20px}.sns a:nth-child(2) svg{fill:currentColor}
+
+.access{background:var(--ink);color:#ece5d6}
+.access h2{color:var(--gold)}
+.map{border:1px solid var(--gold);padding:8px;background:#2a3541}
+.map iframe{width:100%;height:420px;border:0;display:block}
+.btnwrap{text-align:center;margin-top:24px}
+.btn{display:inline-block;background:var(--brick);color:#f5efe2;text-decoration:none;padding:16px 44px;border:1px solid var(--gold);font-family:"Shippori Mincho",serif;letter-spacing:.14em}
+.btn:hover{background:var(--brick-d)}
+.addr{text-align:center;margin-top:20px;font-size:.95rem}
+
+footer{background:var(--brick-d);color:#d9cdb8;text-align:center;padding:36px 24px;font-size:.85rem}
+footer a{text-underline-offset:3px}
+
+@media(max-width:760px){
+ section{padding:64px 0}
+ .story .cols,.feature .cols,.voice-grid{grid-template-columns:1fr}
+ .themes .list{grid-template-columns:1fr}
+ .themes .item{border-right:0;border-bottom:1px solid rgba(181,145,90,.55)}
+ .themes .item:last-child{border-bottom:0}
+ .info dl{grid-template-columns:1fr}
+ .info dt{border-bottom:0;padding-bottom:0}
+ .map iframe{height:320px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="wrap">
+  <p class="kicker">釧路・根室の芸術文化の拠点</p>
+  <h1>北海道立釧路芸術館</h1>
+  <p class="sub">港のレンガ倉庫街を思わせる建物の中で、釧路の空気と、ここにしかない作品に出会う。</p>
+  <div class="meta"><span>釧路市幸町4丁目1番5号</span><span>休館日 月曜日（祝日等の場合は翌日）</span></div>
+ </div>
+</header>
+
+<section class="story">
+ <div class="wrap cols">
+  <div class="frame"><img src="images/2.jpg" alt="夕暮れの釧路芸術館の外観。レンガ色の壁面が港の光に染まる" loading="lazy"></div>
+  <div>
+   <p class="year">1998</p>
+   <h2 style="text-align:left;margin-top:8px">創設のものがたり</h2>
+   <p>1998年10月、釧路・根室圏の芸術文化の拠点として開館しました。北海道が主体となり、地域の芸術振興と、北国ならではの個性的な文化づくりを目指して設立された美術館です。</p>
+   <p>建物は、かつて釧路の港湾中心部に並んだレンガ倉庫街をイメージしたデザイン。設計は象設計集団が手がけました。</p>
+  </div>
+ </div>
+</section>
+
+<section class="themes">
+ <div class="wrap">
+  <h2>三つのテーマ</h2>
+  <div class="rule"></div>
+  <p class="lead">釧路・根室にゆかりのある作品や、自然をテーマにした作品を、三つの柱で収集しています。</p>
+  <div class="list">
+   <div class="item"><h3>映像芸術</h3><p>光と時間で表現する作品を通して、新しい芸術のかたちに触れられます。</p></div>
+   <div class="item"><h3>芸術と自然</h3><p>北の大地や海の気配を感じさせる、自然をテーマにした作品を紹介します。</p></div>
+   <div class="item"><h3>地域と芸術</h3><p>釧路・根室地域にゆかりのある作家と作品を、丁寧にたどります。</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="feature">
+ <div class="wrap cols">
+  <div>
+   <h3>訪れるたびに、違う展示に出会える</h3>
+   <p>展示の内容は年間を通して入れ替わります。何度訪れても新しい発見があります。特別展や企画展のほか、講演会、コンサート、映画会なども開かれ、地域と連携しながら芸術文化を広く発信しています。</p>
+   <ul>
+    <li>特別展・企画展</li>
+    <li>講演会</li>
+    <li>コンサート</li>
+    <li>映画会</li>
+   </ul>
+  </div>
+  <div class="wide"><img src="images/3.jpg" alt="静かな展示室で作品を見つめる来館者の後ろ姿" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="voices">
+ <div class="wrap">
+  <h2>来館者の声</h2>
+  <div class="rule"></div>
+  <div class="voice-grid">
+   <div class="voice"><div class="stars" aria-label="5つ星中4">★★★★</div><p>MOOから歩いてすぐで、晴れていると良い感じでした（中には入っていませんが）。</p></div>
+   <div class="voice"><div class="stars" aria-label="5つ星中5">★★★★★</div><p>さかなクンの絵を見たくて行ってきました。絵の1つ1つに、その魚に関する詳しいことが書いてあり、知らなかったこともあって勉強になりました。さすがさかなクンですね。素晴らしい絵ばかりでした。</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="info">
+ <div class="wrap">
+  <h2>施設案内</h2>
+  <div class="rule"></div>
+  <dl>
+   <dt>施設名</dt><dd>北海道立釧路芸術館</dd>
+   <dt>住所</dt><dd>釧路市幸町4丁目1番5号</dd>
+   <dt>電話番号</dt><dd><a href="tel:0154232381">0154-23-2381</a></dd>
+   <dt>休館日</dt><dd>月曜日（祝日等の場合は翌日）</dd>
+   <dt>メール</dt><dd><a href="mailto:kushiro-artmu@c-linkage.co.jp">kushiro-artmu@c-linkage.co.jp</a></dd>
+   <dt>公式サイト</dt><dd><a href="https://www.kushiro-artmu.jp/" target="_blank" rel="noopener">https://www.kushiro-artmu.jp/</a></dd>
+   <dt>SNS</dt><dd><div class="sns">
+    <a href="https://www.instagram.com/kushiroartmuseum/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://x.com/kushiroartmu" target="_blank" rel="noopener" aria-label="X（旧Twitter）"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.100l-6.800 7.700L22 21h-6.200l-4.900-6.300L5.300 21H2.200l7.200-8.300L1.900 3h6.400l4.400 5.800L17.800 3zm-1.100 16.200h1.700L7.300 4.700H5.500l11.200 14.500z"/></svg></a>
+   </div></dd>
+  </dl>
+ </div>
+</section>
+
+<section class="access" id="access">
+ <div class="wrap">
+  <h2>アクセス</h2>
+  <div class="rule"></div>
+  <div class="map">
+   <iframe title="北海道立釧路芸術館の地図" src="https://www.google.com/maps?q=%E5%8C%97%E6%B5%B7%E9%81%93%E7%AB%8B%E9%87%A7%E8%B7%AF%E8%8A%B8%E8%A1%93%E9%A4%A8%20%E9%87%A7%E8%B7%AF%E5%B8%82%E5%B9%B8%E7%94%BA4%E4%B8%81%E7%9B%AE1%E7%95%AA5%E5%8F%B7&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+  </div>
+  <div class="btnwrap"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E6%B5%B7%E9%81%93%E7%AB%8B%E9%87%A7%E8%B7%AF%E8%8A%B8%E8%A1%93%E9%A4%A8%20%E9%87%A7%E8%B7%AF%E5%B8%82%E5%B9%B8%E7%94%BA4%E4%B8%81%E7%9B%AE1%E7%95%AA5%E5%8F%B7" target="_blank" rel="noopener">Googleマップで開く</a></div>
+  <p class="addr">釧路市幸町4丁目1番5号</p>
+ </div>
+</section>
+
+<footer>
+ <p>北海道立釧路芸術館｜TEL <a href="tel:0154232381">0154-23-2381</a>｜休館日 月曜日（祝日等の場合は翌日）</p>
+</footer>
+</body>
+</html>
